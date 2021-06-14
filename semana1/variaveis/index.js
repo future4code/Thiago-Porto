@@ -56,8 +56,8 @@ console.log(`Olá ${nome}, você tem ${idade} anos`);
 //2.
 
 const pergunta1 = 'Você é homem?',
-  pergunta2 = 'Você é maoir de idade?',
-  pergunta3 = 'Você tem reservista?',
+  pergunta2 = 'Você é maior de idade?',
+  pergunta3 = 'Você possui reservista?',
   resposta1 = prompt(pergunta1),
   resposta2 = prompt(pergunta2),
   resposta3 = prompt(pergunta3),
