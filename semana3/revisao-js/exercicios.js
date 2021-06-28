@@ -9,7 +9,8 @@ function inverteArray(array) {
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
-  
+  const evenNumberTwo = array.filter((num) => num % 2 === 0).map((num) => num**2);
+  return evenNumberTwo;
 }
 
 // EXERCÍCIO 03
