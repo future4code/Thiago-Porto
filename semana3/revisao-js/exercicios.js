@@ -55,9 +55,9 @@ function retornaNNumerosPares(n) {
    let even = 0;
    let i = 0;
    while(i < n){
-      i++;
-      evenNumbers.push(even);
-      even += 2;
+     i++;
+     evenNumbers.push(even);
+     even += 2;
    }
    return evenNumbers;
 }
@@ -72,30 +72,41 @@ function checaTriangulo(a, b, c) {
 
 // EXERCÍCIO 09
 function comparaDoisNumeros(num1, num2) {
-  let maior;
-  let menor;
+  let bigger;
+  let smaller;
    if(num1 > num2){
-      maior = num1;
-      menor = num2;
+      bigger = num1;
+      smaller = num2;
    }
    if(num2 > num1){
-      maior = num2;
-      menor = num1;
+      bigger = num2;
+      smaller = num1;
    }
 
-   const maiorDivisivelporMenor = maior % menor === 0;
-   const diferenca = maior - menor;
+   const majorDivisibleByMinor = bigger % smaller === 0;
+   const difference = bigger - smaller;
    
    return {
-     maiorNumero: maior, 
-     maiorDivisivelporMenor: maiorDivisivelporMenor,
-     diferenca: diferenca
-  }; 
-}
+    maiorNumero: bigger,
+    maiorDivisivelporMenor: majorDivisibleByMinor,
+    diferenca: difference,
+  };
+};
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
-
+  let size = array.length;
+   for (let i = 0; i < size; i++) {
+    for (let j = 0; j < size; j++) {
+      if (array[j] > array[j + 1]) {
+        let aux = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = aux;
+      }
+    }
+  }
+   
+  return [array[array.length - 2], array[1]]
 }
 
 // EXERCÍCIO 11
