@@ -15,7 +15,8 @@ function retornaNumerosParesElevadosADois(array) {
 
 // EXERCÍCIO 03
 function retornaNumerosPares(array) {
-
+  const evenNumbers = array.filter((num) => num % 2 === 0);
+  return evenNumbers;
 }
 
 // EXERCÍCIO 04
