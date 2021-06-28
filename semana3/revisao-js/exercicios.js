@@ -51,7 +51,15 @@ function retornaExpressoesBooleanas() {
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
-
+  const evenNumbers = [];
+   let even = 0;
+   let i = 0;
+   while(i < n){
+      i++;
+      evenNumbers.push(even);
+      even += 2;
+   }
+   return evenNumbers;
 }
 
 // EXERCÍCIO 08
