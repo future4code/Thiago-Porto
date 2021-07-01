@@ -109,6 +109,9 @@ td button {
   color: black;
 }
 
+td > button:hover {
+	background-color: #a58b18;
+}
 td {
 	text-align: center;
 }
@@ -116,6 +119,7 @@ td {
 td > img {
 	width: 50px;
 }
+
 
 .container-do-search {
   margin-top: 20px;
