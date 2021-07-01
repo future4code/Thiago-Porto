@@ -113,6 +113,10 @@ td {
 	text-align: center;
 }
 
+td > img {
+	width: 50px;
+}
+
 .container-do-search {
   margin-top: 20px;
   height: 100px;
