@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+header {
+  padding: 0 2%;
+  height: 80px;
+  background: green;
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  height: inherit;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+}
+
+.logo h1 {
+  margin-bottom: 5px;
+}
+
+.navbar {
+  list-style: none;
+}
+
+.navbar li, .navbar li a {
+  color: aliceblue;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.sobre {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.sobre h1 {
+  color: green;
+  padding-bottom: 20px;
+}
+
+.sobre p {
+  color: rgb(31, 78, 31);
+  padding: 50px 4%;
+}
+
+.sobre button {
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  background: rgb(153, 247, 12);
+  border: 1px solid green;
+  height: 40px;
+  width: 190px;
+}
+
+footer {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+footer p {
+  color: green;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer nav img {
+  margin: 7px;
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+}
+
+/* Estoque */
+
+h2 {
+  color: green;
+  margin: 40px;
+  text-align: center;
+}
+
+.crtl-estoque {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+table {
+  display: block;
+  background: chartreuse;
+  border: 2px solid green;
+  width: 50%;
+}
+
+table tr th {
+  color: aliceblue;
+  width: 25%;
+}
+
+table tr td {
+  text-align: center;
+  color: darkgreen;
+}
+
+/* add produtos */
+
+.add-produtos {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form div {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+form label {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input {
+  border: 1px solid greenyellow;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.form-add button {
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  background: rgb(153, 247, 12);
+  border: 1px solid green;
+  padding: 10px 40px;
+}
+
+/* Funcionarios */
+
+.funcionarios {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.funcionarios ol li {
+  color: green;
+  list-style: none;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
