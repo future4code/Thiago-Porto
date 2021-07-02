@@ -1,0 +1,32 @@
+header {
+  background-color: crimson;
+  padding: 15px 4%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 28px;
+}
+
+.menu li a {
+  color: white;
+  transition: color .2s ease-in;
+}
+
+.menu li a:hover {
+  color: brown;
+}

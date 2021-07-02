@@ -1,0 +1,50 @@
+.inicio {
+  background: url('../img/wallpaper.jpg') no-repeat center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
+  margin-top: 74px;
+}
+
+.inicio-content {
+  color: white;
+}
+
+.inicio-content .txt1 {
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+
+.inicio-content .txt2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.inicio-content .txt3 {
+  font-size: 40px;
+  margin: 5px 0;
+  margin-bottom: 25px;
+}
+
+.inicio-content .txt3 span {
+  color: crimson;
+  font-weight: 500;
+}
+.inicio-content button {
+  background-color: crimson;
+  border: 2px solid #d01c40;
+  border-radius: 10px;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 12px 36px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.inicio-content button:hover {
+  background-color: transparent;
+  color: crimson;
+}

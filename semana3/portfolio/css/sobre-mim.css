@@ -1,0 +1,72 @@
+.sobre-mim {
+  padding: 10px 4%;
+  width: 100%;
+  text-align: center;
+}
+.sobre-mim .title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 50px 0;
+}
+
+.sobre-mim-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+figure {
+  background: #ccc;
+  width: 400px;
+  height: 300px;
+}
+.sobre-mim-content img {
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.sobre-mim-txt {
+  margin-top: 50px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.sobre-mim-txt .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.sobre-mim-txt .text span {
+  color: crimson;
+  font-weight: 500;
+}
+
+.sobre-mim-txt p {
+  text-align: justify;
+}
+
+.sobre-mim-txt a {
+  background-color: crimson;
+  border: 2px solid #d01c40;
+  border-radius: 5px;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+  padding: 10px 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sobre-mim-txt a:hover {
+  background-color: transparent;
+  color: crimson;
+}
