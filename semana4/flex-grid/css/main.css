@@ -1,0 +1,32 @@
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+main aside {
+  background-color: var(--rosa-claro);
+  width: 400px;
+}
+
+main ul li img {
+  width: 5px;
+}
+
+main li p {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 50%;
+}
+
+
+main ul li {
+  margin-bottom: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+main ul li img {
+  width: 50px;
+}
+
