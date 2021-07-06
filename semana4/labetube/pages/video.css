@@ -1,0 +1,15 @@
+.video-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-content video {
+  border: 3px solid black;
+  margin: 20px 0;
+  width: 600px;
+}
+
+.video-content h2 {
+  margin: 50px 0;
+}
