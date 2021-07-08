@@ -1,0 +1,23 @@
+header {
+  background-color: var(--rosa-escuro);
+  height: 80px;
+  padding: 0 2%;
+}
+
+header nav {
+  align-items: center;
+  display: flex;
+  height: inherit;
+  justify-content: space-between;
+}
+
+header .logo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+header .logo img {
+  width: 20px;
+}
