@@ -67,7 +67,9 @@ class App extends React.Component {
     fotoPostInput: '',
   };
 
-  showNovoPost = () => {
+  showNovoPost = (event) => {
+    event.preventDefault();
+    
     const copiaArray = this.state.post;
     const novoPost = {
       nomeUsuario: this.state.nomeUsuarioInput,
