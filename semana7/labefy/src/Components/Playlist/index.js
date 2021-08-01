@@ -14,6 +14,7 @@ export class Playlist extends React.Component {
     this.setState({ playlistInputValue: target.value });
 
   createPlayList = async () => {
+    this.setState({ playlistInputValue: '' });
     const playlistName = this.state.playlistInputValue;
     const { url, body, headers } = {
       url: 'https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists',

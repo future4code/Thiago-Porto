@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+
+import SongsList from '../SongsList';
 import Button from '../../Button';
 
 const { url, headers } = {
@@ -25,6 +27,7 @@ export class ListPlaylist extends React.Component {
       },
     } = await axios.get(url, headers);
     this.setState({ playlists: list });
+    this.componentDidMount();
   };
 
   deletePlaylist = async (id) => {
@@ -34,22 +37,27 @@ export class ListPlaylist extends React.Component {
   };
 
   render() {
+    const { playlists } = this.state;
     const showPlaylist = ({ id, name }) => (
-      <li key={id}>
-        {name}{' '}
-        <Button
-          name={'X'}
-          type={'button'}
-          event={() => this.deletePlaylist(id)}
-        />{' '}
-      </li>
+      <div key={id}>
+        <li>
+          {name}
+          <Button
+            name={'X'}
+            type={'button'}
+            event={() => this.deletePlaylist(id)}
+          />
+        </li>
+        <section>
+          <SongsList idSong={id} />
+        </section>
+      </div>
     );
-    const showPlaylistMap = this.state.playlists.map(showPlaylist);
-    // const { playlists } = this.state;
+    const showPlaylistMap = playlists.map(showPlaylist);
     return (
       <section>
         <h2>Your playlists</h2>
-        {!this.state.playlists.length ? (
+        {!playlists.length ? (
           <p>you don't have playlists at the moment</p>
         ) : (
           <ul>{showPlaylistMap}</ul>
